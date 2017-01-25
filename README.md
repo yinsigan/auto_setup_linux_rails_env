@@ -21,3 +21,20 @@ pg改密码:
 ``` bash
 ALTER USER postgres WITH PASSWORD 'postgres';
 ```
+
+ubuntu 16.04安装nginx:
+
+``` bash
+# /etc/apt/sources.list
+deb http://nginx.org/packages/mainline/ubuntu/ xenial nginx
+deb-src http://nginx.org/packages/mainline/ubuntu/ xenial nginx
+```
+
+如果是14.04就把`xenial`换成`trusty`
+
+``` bash
+wget http://nginx.org/keys/nginx_signing.key
+sudo apt-key add nginx_signing.key
+sudo apt-get update
+sudo apt-get install nginx
+```
